@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="오늘은 무엇을 먹을까?">
+    <meta property="og:description" content="오늘 무슨 음식을 먹을지 모르겠을때 추천해주는 사이트입니다">
+    <meta property="og:url" content="http://todayfoodpic.netlify.app">
+    <link rel="canonical" href="http://todayfoodpic.netlify.app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="오늘 무엇을 먹을지 모르겠을때 무엇을 먹을지 추천해주는 사이트 입니다">
+    <link rel="stylesheet" a href="./index.css">
+    <link rel="stylesheet" a href="./radio_menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>&#129300;오늘 뭐 먹지?</title>
+</head>
+<body>
+  <main>
+    <div class="background_overlay"></div>  
+    <article class="main_page">
+       <div class="start_container">
+        <span class="kakao_ad">
+            <ins class="kakao_ad_area" style="display:none;" 
+                data-ad-unit    = "DAN-0CqLpBUiFJvbQjoQ" 
+                data-ad-width   = "320" 
+                data-ad-height  = "100"></ins>  
+             </span> 
+          <h1 class="topic">&#129300;오늘 뭐 먹지?</h1>
+          <h2 class="introduce">&#127789;당신이 무엇을 먹을지 정해드립니다!&#127789;</h2>
+          <span class="start_btn">START!</span>
+      </div> 
+    </article>
+    <article class="choice_page">
+      <div class="mid_container">   
+        <span class="kakao_ad">
+            <ins class="kakao_ad_area" style="display:none;" 
+                data-ad-unit    = "DAN-0CqLpBUiFJvbQjoQ" 
+                data-ad-width   = "320" 
+                data-ad-height  = "100"></ins>  
+             </span>
+        <h1 class="topic">&#9989;종류를 선택해주세요~!</h1>
+           <div class="choice_container">
+             <div class="food_box">
+                 <span class="btn_container">
+                    <input type="Radio" id="korean" class="country" name="input_type_01">
+                    <input type="Radio" id="chinese" class="country" name="input_type_01">
+                    <input type="Radio" id="japanese" class="country" name="input_type_01">
+                    <input type="Radio" id="western" class="country" name="input_type_01">
+                    <label id="korean" for="korean">한식</label>
+                    <label id="chinese" for="chinese">중식</label>
+                    <label id="japanese" for="japanese">일식</label>
+                    <label id="western" for="western">양식</label>
+                 </span>
+             </div>
+             <div class="food_box">
+                <span class="btn_container2">
+                    <input type="Radio" id="normal" class="taste" name="input_type_02">
+                    <input type="Radio" id="spicy" class="taste" name="input_type_02">
+                    <label id="normal" for="normal">혼자</label>
+                    <label id="spicy" for="spicy">같이</label>
+                 </span>
+             </div>
+             <div class="food_box">
+                <span class="btn_container3">
+                    <input type="Radio" id="snack" class="kind" name="input_type_03">
+                    <input type="Radio" id="meal" class="kind" name="input_type_03">
+                    <label id="snack" for="snack">간단</label>
+                    <label id="meal" for="meal">식사</label>
+                 </span>
+             </div>
+           </div> 
+         <span class="result_btn">결과보기</span>   
+        </div>
+    </article>
+    <article class="result_page">
+        <span class="kakao_ad">
+            <ins class="kakao_ad_area" style="display:none;" 
+                data-ad-unit    = "DAN-0CqLpBUiFJvbQjoQ" 
+                data-ad-width   = "320" 
+                data-ad-height  = "100"></ins>  
+             </span> 
+        <h2 class="result_topic">오늘의 음식은??</h2>
+         <h2 class="foodname"></h2>
+          <span class="search_page">
+              <h4>추천레시피</h4>
+          </span>
+         </article>
+         <span class="share_box">
+            <div class="addthis_inline_share_toolbox_wm0d"></div>
+         </span>
+ </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60988e618d2effca"></script><!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60988e618d2effca"></script>
+
+</body>
+</html>
