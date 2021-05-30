@@ -248,6 +248,13 @@ input{
     right:0;
     z-index: 4;
 }
+.retry_btn{
+    position:absolute;
+    display:inline-block;
+    width:100px;
+    height:60px;
+    border:1px solid white;
+}
 
 ::-webkit-scrollbar {
     width:5px;
