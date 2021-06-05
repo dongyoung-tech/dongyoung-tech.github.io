@@ -126,21 +126,7 @@ var mbti3=""
        }
 
 
-function foodsearch(){
-  var name=document.querySelector(".foodname").innerHTML;
-  $.ajax({
-    method: "GET",
-    url: "https://dapi.kakao.com/v2/search/web",
-    data: {query:name +"레시피"},
-    headers:{Authorization:"KakaoAK f34a91ca9e1e99ad266cbc7e674571d2"}
-  })
-    .done(function(msg) {
-      console.log( msg );
-      for(i=0; i<5; i++){
-      $(".search_page").append("<a href='"+msg.documents[i].url+"' target='_blank'>'"+ msg.documents[i].title+"'</a>");
-      }
-    });
-}
+
        
 var result_btn= document.querySelector(".result_btn");
 var search=document.querySelector(".search_page");
@@ -162,7 +148,35 @@ function foodresult(){
   /*API 서버에서 검색 값 가져오기*/
 
 }
+function foodsearch(){
+  var name=document.querySelector(".foodname").innerHTML;
+  $.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v2/search/web",
+    data: {query:name +"레시피"},
+    headers:{Authorization:"KakaoAK f34a91ca9e1e99ad266cbc7e674571d2"}
+  })
+    .done(function(msg) {
+      console.log( name );
+      for(i=0; i<5; i++){
+      $(".search_page").append("<a href='"+msg.documents[i].url+"' target='_blank'>'"+ msg.documents[i].title+"'</a>");
+      }
+    });
 
+     
+}
+
+
+
+
+
+    
+    var map_btn= document.querySelector(".map_btn");
+      map_btn.addEventListener("click",function(){
+      document.querySelector(".food_map").classList.toggle("after");
+      document.querySelector(".search_page").classList.toggle("after");
+      
+    });
 
 
 
