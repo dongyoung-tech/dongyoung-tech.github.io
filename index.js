@@ -130,6 +130,7 @@ var mbti3=""
        
 var result_btn= document.querySelector(".result_btn");
 var search=document.querySelector(".search_page");
+var rebtn=document.querySelector(".retry_btn");
 result_btn.addEventListener("click",foodresult);
 function foodresult(){ 
   var balance=mbti+mbti2+mbti3;
@@ -141,6 +142,7 @@ function foodresult(){
     document.querySelector(".result_page").style.display="inline-block";
     setTimeout(function(){document.querySelector(".foodname").style.opacity="1";},1000);
     setTimeout(function(){search.classList.add("after");},1200);
+    setTimeout(function(){rebtn.classList.add("after");},1200);
     document.querySelector(".foodname").innerHTML=foodname[""+balance][Math.floor(Math.random() * 3)+1];
     foodsearch();
    
