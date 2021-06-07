@@ -111,6 +111,10 @@ article{
     border-radius: 50px;
     margin: 0 auto;
 }
+.start_btn:hover{
+    background-color: #46649B;
+    color:white;
+}
 .choice_page{
     display: inline-block;
     width:100%;
@@ -148,6 +152,7 @@ article{
     display: inline-block;
     margin-top:25px;
     border: 2px solid #46649B;
+    border-radius: 50px;
     width:100%;
     box-sizing: border-box;
 }
@@ -178,9 +183,14 @@ label{
     float: left;
     color: #46649B;
     box-sizing: border-box;
+    border-radius: 50px;
     text-align: center;
     line-height:52px;
     font-weight: bold;
+}
+label:hover{
+    background-color: #7DA5E1;
+    color:white;
 }
 .result_btn{
     width:200px;
@@ -194,6 +204,10 @@ label{
     display:block;
     border-radius: 50px;
     margin:0 auto;
+}
+.result_btn:hover{
+    background-color: #46649B;
+    color:white;
 }
 
 label:last-child{
@@ -213,6 +227,7 @@ label:last-child{
     display:none;
     text-align: center;
 }
+
 
 
 .result_page a{
@@ -283,6 +298,16 @@ label:last-child{
     right:50%;
     margin-right:-350px;
 }
+.map_btn2{
+    position: absolute;
+    display:none;
+    color:#46649B;
+    width:50px;
+    text-align: center;
+    top:170px;
+    right:50%;
+    margin-right:-350px;
+}
 
 .food_map{
     display:inline-block;
@@ -310,12 +335,30 @@ label:last-child{
     height:100%;
 }
 .adress{
-    width:100px;
-    height:20px;
+    width:200px;
+    height:50px;
     display: block;
     margin:0 auto;
     z-index: 5;
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border:solid 2px #46649B;
+    color:#46649B;
+}
+.creator{
+    display: block;
+    position: absolute;
+    top:15%;
+    right:10%;
+    color:#46649B;
+}
+.side_icon{
+    display: block;
+    position: absolute;
+    top:15%;
+    left:10%;
+    color:#46649B; 
 }
 
 ::-webkit-scrollbar {
@@ -363,7 +406,7 @@ label:last-child{
         font-size: 1vw;
     }
     .topic{
-        margin-top:3vw;
+        margin-top:1.5vw;
         font-size: 2.5vw;
         margin-bottom: 1vw;
     }
@@ -387,17 +430,20 @@ label:last-child{
     }
     .result_page a{
         margin-bottom:1vw;
-        font-size: 0.8vw;
+        font-size:1vw;
         height:1.3vw;
     }
     .retry_btn a{
+        font-size:1vw;
+    }
+    .creator{
         font-size:1vw;
     }
 }
 
 @media(max-width:900px){
     .choice_container{
-        width:97vw;
+        width:85vw;
     }
     .food_box{
         width:100%;
@@ -420,6 +466,9 @@ label:last-child{
     .map_btn{
         margin-right:-45vw;
     }
+    .map_btn2{
+        margin-right:-45vw;
+    }
     .food_map{
         margin-left:-47.5vw;
     }
@@ -429,7 +478,7 @@ label:last-child{
  
   main{
       background-image: none;
-      background-color:#9bf9d4;
+      background-color:none;
   }
   .start_container{
       background-image: url("./assets/fruit.png");
@@ -462,10 +511,10 @@ label:last-child{
         padding-top:50px;
         margin:0 auto;
     }
-    .food_map{
-        width:95vw;
-        height:300px;
+    .creator{
+        top:5%;
     }
+  
 }
 
 @media(max-width:550px){
@@ -482,8 +531,16 @@ label:last-child{
     }
     .choice_container{
         height:320px;
+        width:95vw;
     }
     
+    
+}
+@media(max-width:800px){
+    .food_map{
+        width:90vw;
+        height:300px;
+    }
 }
 
 @media(max-height:750px){
@@ -502,6 +559,7 @@ label:last-child{
     body{
       overflow: scroll;
     }
+    
 }
 @media(max-height:550px){
     .start_container{
