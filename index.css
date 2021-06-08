@@ -360,9 +360,28 @@ label:last-child{
     left:10%;
     color:#46649B; 
 }
+.infowindow{
+    padding:5px;
+    box-sizing:border-box;
+    font-size:11px;
+    text-align:left;
+    overflow:scroll;
+    width:150px;
+    height:42px;
+}
+.place_adress{
+    margin:0;
+    color:#46649B; 
+}
+.place_phone{
+    margin:0;
+    color:yellowgreen; 
+}
+
 
 ::-webkit-scrollbar {
     width:5px;
+    height:5px;
   }
   ::-webkit-scrollbar-thumb {
     background:#46649B;
