@@ -54,8 +54,9 @@ function displayMarker(place) {
     // 마커에 클릭이벤트를 등록합니다
     kakao.maps.event.addListener(marker, 'click', function() {
         // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
-        infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+        infowindow.setContent('<div class="infowindow">' + place.place_name+'<br>'+'<p class="place_adress">'+place.address_name+'</p>'+'<p class="place_phone">'+place.phone+'</p>' + '</div>');
         infowindow.open(map, marker);
+        console.log(place);
     });
 }
     }
