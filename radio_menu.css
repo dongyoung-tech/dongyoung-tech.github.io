@@ -1,17 +1,17 @@
 .btn_container input[type=radio]:nth-of-type(1):checked ~ label:nth-of-type(1){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }  
 .btn_container input[type=radio]:nth-of-type(2):checked ~ label:nth-of-type(2){
-    background-color: #7DA5E1;
-    color: white;
+    background-color: forestgreen;
+    color:white;
 }   
 .btn_container input[type=radio]:nth-of-type(3):checked ~ label:nth-of-type(3){
-    background-color: #7DA5E1;      
+    background-color: forestgreen;
     color: white;
 }   
 .btn_container input[type=radio]:nth-of-type(4):checked ~ label:nth-of-type(4){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }  
   
@@ -19,15 +19,15 @@
 
 
 .btn_container2 input[type=radio]:nth-of-type(1):checked ~ label:nth-of-type(1){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }  
 .btn_container2 input[type=radio]:nth-of-type(2):checked ~ label:nth-of-type(2){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }   
 .btn_container2 input[type=radio]:nth-of-type(3):checked ~ label:nth-of-type(3){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }   
 
@@ -35,19 +35,19 @@
 
 
 .btn_container3 input[type=radio]:nth-of-type(1):checked ~ label:nth-of-type(1){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }  
 .btn_container3 input[type=radio]:nth-of-type(2):checked ~ label:nth-of-type(2){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }   
 .btn_container3 input[type=radio]:nth-of-type(3):checked ~ label:nth-of-type(3){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }   
 .btn_container3 input[type=radio]:nth-of-type(4):checked ~ label:nth-of-type(4){
-    background-color: #7DA5E1;
+    background-color: forestgreen;
     color: white;
 }  
   
